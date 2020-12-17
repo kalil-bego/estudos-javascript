@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.boxTabuleiro {
+    height: 614.5px;
+    width: 614.5px;
+    background-color: #303030;
+}
+
+#casasTabuleiro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.casa {
+    width: 76.8px;
+    height: 76.8px;
+}
+
+#preto {
+    background-color: #303030;
+}
+
+#branco {
+    background-color: #F1F1F1;
+    border: 1px solid black;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+}
