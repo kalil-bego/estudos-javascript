@@ -6,7 +6,7 @@
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
     margin: 0 auto;
@@ -23,13 +23,22 @@ main {
     flex-wrap: wrap;
 }
 
+#casasTabuleiro img {
+    cursor: grab;
+    touch-action: manipulation;
+}
+
+#casasTabuleiro img:active {
+    cursor: grabbing;
+}
+
 .casa {
     width: 76.8px;
     height: 76.8px;
 }
 
 #preto {
-    background-color:#eead2d;
+    background-color: #eead2d;
     border: 1px solid black;
 }
 
@@ -41,7 +50,10 @@ main {
 .player {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 .peca {
     width: 100%;
 }

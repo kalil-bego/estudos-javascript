@@ -7,7 +7,7 @@ function criarCasas() {
         console.log(i)
         if (i % 2 == 0) {
             document.getElementById(`casasTabuleiro`).innerHTML += casaspretas;
-            
+
         } else {
             document.getElementById(`casasTabuleiro`).innerHTML += casasbrancas;
         }
