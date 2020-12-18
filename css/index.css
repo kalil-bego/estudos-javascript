@@ -57,3 +57,22 @@ main {
 .peca {
     width: 100%;
 }
+
+.comecar {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerStart {
+    height: 250px;
+    width: 500px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+}

@@ -1,10 +1,10 @@
 window.onload = criarCasas;
 
 function criarCasas() {
-    let casaspretas = `<div class="casa" id="preto"></div>`;
-    let casasbrancas = `<div class="casa" id="branco"></div>`;
     for (let i = 1; i <= 56; i++) {
-        console.log(i)
+        let casaspretas = `<div class="casa" id="preto" id="c${i}"></div>`;
+        let casasbrancas = `<div class="casa" id="branco" id="c${i}"></div>`;
+
         if (i % 2 == 0) {
             document.getElementById(`casasTabuleiro`).innerHTML += casaspretas;
 
@@ -21,4 +21,11 @@ function criarCasas() {
             }
         }
     }
+
+    timer1 = timerPlayer1.innerText.replace(":", "")
+
+    for (let i = timer1; i >= 0; i--) {
+        timerPlayer1.innerHTML = i
+    }
+
 }
