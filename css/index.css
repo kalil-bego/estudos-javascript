@@ -29,15 +29,19 @@ main {
 }
 
 #preto {
-    background-color: #303030;
+    background-color:#eead2d;
+    border: 1px solid black;
 }
 
 #branco {
     background-color: #F1F1F1;
-    border: 1px solid black;
+    border: 0.5px solid black;
 }
 
 .player {
     display: flex;
     justify-content: center;
+}
+.peca {
+    width: 100%;
 }
