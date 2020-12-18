@@ -7,14 +7,17 @@ function criarCasas() {
         console.log(i)
         if (i % 2 == 0) {
             document.getElementById(`casasTabuleiro`).innerHTML += casaspretas;
+            
         } else {
             document.getElementById(`casasTabuleiro`).innerHTML += casasbrancas;
         }
         if (i % 7 == 0) {
             if (i % 2 == 0) {
                 document.getElementById(`casasTabuleiro`).innerHTML += casasbrancas;
+                document.getElementById('branco').innerHTML = `<img src="${torre.imgPeca}" class="peca" id="torre">`;
             } else {
                 document.getElementById(`casasTabuleiro`).innerHTML += casaspretas;
+                document.getElementById('preto').innerHTML = `<img src="${cavalo.imgPeca}" class="peca" id="cavalo">`;
             }
         }
     }
